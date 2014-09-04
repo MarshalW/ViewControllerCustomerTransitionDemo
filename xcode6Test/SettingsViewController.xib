@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="设置页" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7o-VD-QBk">
+                    <rect key="frame" x="25" y="25" width="51" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obl-sr-NRr">
+                    <rect key="frame" x="8" y="108" width="304" height="44"/>
+                    <color key="backgroundColor" red="0.83065375413643505" green="0.85772793839105854" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="D6d-Qn-4oy"/>
+                        <constraint firstAttribute="width" constant="304" id="am8-mA-Jek"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeX-6v-0ZK">
+                    <rect key="frame" x="8" y="173" width="304" height="44"/>
+                    <color key="backgroundColor" red="0.83065375409999997" green="0.85772793839999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="qR7-ng-bIE"/>
+                        <constraint firstAttribute="width" constant="304" id="wtO-kP-S9A"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omc-aP-GNF">
+                    <rect key="frame" x="8" y="242" width="304" height="44"/>
+                    <color key="backgroundColor" red="0.83065375409999997" green="0.85772793839999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5cj-9J-j51"/>
+                        <constraint firstAttribute="width" constant="304" id="ptg-bP-Apb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hke-Pl-5Ne">
+                    <rect key="frame" x="8" y="308" width="304" height="202"/>
+                    <color key="backgroundColor" red="0.83065375409999997" green="0.85772793839999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="HpU-py-0c8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="xeX-6v-0ZK" secondAttribute="centerX" id="0Wo-40-Dgw"/>
+                <constraint firstAttribute="bottom" secondItem="Hke-Pl-5Ne" secondAttribute="bottom" constant="58" id="BHK-Oy-hhV"/>
+                <constraint firstAttribute="centerX" secondItem="Hke-Pl-5Ne" secondAttribute="centerX" id="Cj1-NZ-mSK"/>
+                <constraint firstItem="xeX-6v-0ZK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="173" id="HHw-de-8OH"/>
+                <constraint firstItem="obl-sr-NRr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="108" id="VvL-ZK-EvB"/>
+                <constraint firstItem="omc-aP-GNF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="242" id="l51-oY-piE"/>
+                <constraint firstAttribute="centerX" secondItem="obl-sr-NRr" secondAttribute="centerX" id="nB1-R8-B8D"/>
+                <constraint firstAttribute="centerX" secondItem="omc-aP-GNF" secondAttribute="centerX" id="sn1-Oe-qGf"/>
+                <constraint firstItem="Hke-Pl-5Ne" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="308" id="v4K-OX-pcs"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                <size key="portraitSize" width="320" height="568"/>
+                <size key="landscapeSize" width="568" height="320"/>
+            </simulatedScreenMetrics>
+            <point key="canvasLocation" x="152" y="156"/>
+        </view>
+    </objects>
+</document>
