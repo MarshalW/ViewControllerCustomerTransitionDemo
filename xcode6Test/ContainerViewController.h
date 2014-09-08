@@ -10,4 +10,6 @@
 
 @interface ContainerViewController : UIViewController<UINavigationControllerDelegate>
 
+@property (nonatomic) NSInteger currentControllerIndex;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "HomePageNextStepViewController.h"
+#import "HomePageThirdViewController.h"
 
 @interface HomePageNextStepViewController ()
 
@@ -16,6 +17,11 @@
 
 - (IBAction)goBack:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+- (IBAction)nextPage:(id)sender {
+    
+    HomePageThirdViewController *controller=[[HomePageThirdViewController alloc] initWithNibName:@"HomePageThirdViewController" bundle:nil];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

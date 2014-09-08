@@ -18,6 +18,12 @@
 		F344BA8B19B3117500C22589 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F344BA8A19B3117500C22589 /* ViewController.xib */; };
 		F3A7154319B86DB2004D630D /* HomePageNextStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A7154119B86DB2004D630D /* HomePageNextStepViewController.m */; };
 		F3A7154419B86DB2004D630D /* HomePageNextStepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3A7154219B86DB2004D630D /* HomePageNextStepViewController.xib */; };
+		F3A7154719B9569C004D630D /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A7154619B9569C004D630D /* NavigationControllerDelegate.m */; };
+		F3A7154A19B95D0B004D630D /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A7154919B95D0B004D630D /* Animator.m */; };
+		F3A7154E19B992C7004D630D /* HomePageThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A7154C19B992C7004D630D /* HomePageThirdViewController.m */; };
+		F3A7154F19B992C7004D630D /* HomePageThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3A7154D19B992C7004D630D /* HomePageThirdViewController.xib */; };
+		F3A7155219B9A3A0004D630D /* PopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A7155119B9A3A0004D630D /* PopAnimator.m */; };
+		F3A7155519B9A9F0004D630D /* ContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A7155419B9A9F0004D630D /* ContainerView.m */; };
 		F3BF6A4419B5DA840022AE12 /* LoginFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BF6A4219B5DA840022AE12 /* LoginFormViewController.m */; };
 		F3BF6A4519B5DA840022AE12 /* LoginFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3BF6A4319B5DA840022AE12 /* LoginFormViewController.xib */; };
 		F3BF6A4819B5EA4C0022AE12 /* LoginFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BF6A4719B5EA4C0022AE12 /* LoginFormView.m */; };
@@ -70,6 +76,17 @@
 		F3A7154019B86DB2004D630D /* HomePageNextStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageNextStepViewController.h; sourceTree = "<group>"; };
 		F3A7154119B86DB2004D630D /* HomePageNextStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageNextStepViewController.m; sourceTree = "<group>"; };
 		F3A7154219B86DB2004D630D /* HomePageNextStepViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageNextStepViewController.xib; sourceTree = "<group>"; };
+		F3A7154519B9569C004D630D /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
+		F3A7154619B9569C004D630D /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		F3A7154819B95D0B004D630D /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		F3A7154919B95D0B004D630D /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		F3A7154B19B992C7004D630D /* HomePageThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageThirdViewController.h; sourceTree = "<group>"; };
+		F3A7154C19B992C7004D630D /* HomePageThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageThirdViewController.m; sourceTree = "<group>"; };
+		F3A7154D19B992C7004D630D /* HomePageThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageThirdViewController.xib; sourceTree = "<group>"; };
+		F3A7155019B9A3A0004D630D /* PopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimator.h; sourceTree = "<group>"; };
+		F3A7155119B9A3A0004D630D /* PopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimator.m; sourceTree = "<group>"; };
+		F3A7155319B9A9F0004D630D /* ContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerView.h; sourceTree = "<group>"; };
+		F3A7155419B9A9F0004D630D /* ContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerView.m; sourceTree = "<group>"; };
 		F3BF6A4119B5DA830022AE12 /* LoginFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginFormViewController.h; sourceTree = "<group>"; };
 		F3BF6A4219B5DA840022AE12 /* LoginFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginFormViewController.m; sourceTree = "<group>"; };
 		F3BF6A4319B5DA840022AE12 /* LoginFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginFormViewController.xib; sourceTree = "<group>"; };
@@ -259,9 +276,20 @@
 				F3BF6A7A19B73C280022AE12 /* SettingsViewController.h */,
 				F3BF6A7B19B73C280022AE12 /* SettingsViewController.m */,
 				F3BF6A7C19B73C280022AE12 /* SettingsViewController.xib */,
+				F3A7154B19B992C7004D630D /* HomePageThirdViewController.h */,
+				F3A7154C19B992C7004D630D /* HomePageThirdViewController.m */,
+				F3A7154D19B992C7004D630D /* HomePageThirdViewController.xib */,
 				F3A7154019B86DB2004D630D /* HomePageNextStepViewController.h */,
 				F3A7154119B86DB2004D630D /* HomePageNextStepViewController.m */,
 				F3A7154219B86DB2004D630D /* HomePageNextStepViewController.xib */,
+				F3A7154519B9569C004D630D /* NavigationControllerDelegate.h */,
+				F3A7154619B9569C004D630D /* NavigationControllerDelegate.m */,
+				F3A7154819B95D0B004D630D /* Animator.h */,
+				F3A7154919B95D0B004D630D /* Animator.m */,
+				F3A7155019B9A3A0004D630D /* PopAnimator.h */,
+				F3A7155119B9A3A0004D630D /* PopAnimator.m */,
+				F3A7155319B9A9F0004D630D /* ContainerView.h */,
+				F3A7155419B9A9F0004D630D /* ContainerView.m */,
 			);
 			name = proto.parent.children;
 			sourceTree = "<group>";
@@ -350,6 +378,7 @@
 				F344BA7319B3109500C22589 /* Main.storyboard in Resources */,
 				F3BF6A7E19B73C280022AE12 /* SettingsViewController.xib in Resources */,
 				F3A7154419B86DB2004D630D /* HomePageNextStepViewController.xib in Resources */,
+				F3A7154F19B992C7004D630D /* HomePageThirdViewController.xib in Resources */,
 				F3BF6A5219B6C0C20022AE12 /* DetailViewController.xib in Resources */,
 				F344BA8B19B3117500C22589 /* ViewController.xib in Resources */,
 				F344BA7519B3109500C22589 /* Images.xcassets in Resources */,
@@ -375,14 +404,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A7155219B9A3A0004D630D /* PopAnimator.m in Sources */,
 				F3230E0F19B48EA900080753 /* LoginViewController.m in Sources */,
 				F344BA7019B3109500C22589 /* ViewController.m in Sources */,
+				F3A7154E19B992C7004D630D /* HomePageThirdViewController.m in Sources */,
+				F3A7155519B9A9F0004D630D /* ContainerView.m in Sources */,
 				F3BF6A4419B5DA840022AE12 /* LoginFormViewController.m in Sources */,
 				F3BF6A6619B70BD60022AE12 /* UINavigationController+ShakeAnimation.m in Sources */,
 				F3BF6A5119B6C0C20022AE12 /* DetailViewController.m in Sources */,
 				F344BA6D19B3109500C22589 /* AppDelegate.m in Sources */,
 				F3BF6A5519B6E7BF0022AE12 /* BasicViewController.m in Sources */,
 				F3BF6A6E19B737D40022AE12 /* ContainerViewController.m in Sources */,
+				F3A7154719B9569C004D630D /* NavigationControllerDelegate.m in Sources */,
+				F3A7154A19B95D0B004D630D /* Animator.m in Sources */,
 				F3A7154319B86DB2004D630D /* HomePageNextStepViewController.m in Sources */,
 				F3BF6A7319B73B930022AE12 /* HomePageViewController.m in Sources */,
 				F3BF6A4819B5EA4C0022AE12 /* LoginFormView.m in Sources */,

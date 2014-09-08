@@ -15,8 +15,13 @@
 //#import "HomeViewController.h"
 
 #import "ContainerViewController.h"
+#import "NavigationControllerDelegate.h"
 
 @interface AppDelegate ()
+
+{
+    NavigationControllerDelegate *naviDelegate;
+}
 
 @end
 
@@ -40,7 +45,13 @@
 //    [self.window addSubview:naviController.view];
     
     ContainerViewController *controller=[[ContainerViewController alloc] initWithNibName:@"ContainerViewController" bundle:nil];
-    self.window.rootViewController=controller;
+    
+    UINavigationController *naviController=[[UINavigationController alloc] initWithRootViewController:controller];
+    naviController.navigationBar.hidden = YES;
+    naviDelegate=[[NavigationControllerDelegate alloc] init];
+    naviController.delegate=naviDelegate;
+    
+    self.window.rootViewController=naviController;
     
     return YES;
 }

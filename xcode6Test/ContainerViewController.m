@@ -11,17 +11,16 @@
 #import "ChatListViewController.h"
 #import "SettingsViewController.h"
 
-@interface PrivateTransitionContext : NSObject
-
-@end
-
 
 @interface ContainerViewController ()
 {
     __weak IBOutlet UIView *menuView;
     __weak IBOutlet UIView *contentView;
-    int currentControllerIndex;
+//    int currentControllerIndex;
 }
+
+
+
 @end
 
 @implementation ContainerViewController
@@ -31,53 +30,37 @@
 {
     [super viewDidLoad];
     [self initChildrenControllers];
+    
+    [contentView addSubview:[self currentViewController].view];
+    self.currentControllerIndex=0;
+    [self _runSubviewsAnim:YES controller:[self currentViewController] duration:.5f];
 }
 
 -(UIViewController *) currentViewController
 {
-    return [self.childViewControllers objectAtIndex:currentControllerIndex];
+    return [self.childViewControllers objectAtIndex:self.currentControllerIndex];
 }
-
-- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
-    NSLog(@"will show view controller: %@",viewController);
-    if ([viewController isKindOfClass:[HomePageViewController class]] ||
-        [viewController isKindOfClass:[ChatListViewController class]]||
-        [viewController isKindOfClass:[SettingsViewController class]]){
-        [menuView setHidden:NO];
-    }else{
-        [menuView setHidden:YES];
-    }
-}
-
 
 -(void) initChildrenControllers
 {
     HomePageViewController *homePageViewController=[[HomePageViewController alloc] initWithNibName:@"HomePageViewController" bundle:nil];
-    UINavigationController *naviController=[[UINavigationController alloc] initWithRootViewController:homePageViewController];
-    naviController.navigationBar.hidden = YES;
-    [self addChildViewController:naviController];
-    [naviController didMoveToParentViewController:self];
-    naviController.delegate=self;
+    [self addChildViewController:homePageViewController];
+    [homePageViewController didMoveToParentViewController:self];
     
     ChatListViewController *charListViewController=[[ChatListViewController alloc] initWithNibName:@"ChatListViewController" bundle:nil];
-    naviController=[[UINavigationController alloc] initWithRootViewController:charListViewController];
-    naviController.navigationBar.hidden = YES;
-    [self addChildViewController:naviController];
-    [naviController didMoveToParentViewController:self];
+    [self addChildViewController:charListViewController];
+    [charListViewController didMoveToParentViewController:self];
     
     SettingsViewController *settingsViewController=[[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
-    naviController=[[UINavigationController alloc] initWithRootViewController:settingsViewController];
-    naviController.navigationBar.hidden = YES;
-    [self addChildViewController:naviController];
-    [naviController didMoveToParentViewController:self];
+    [self addChildViewController:settingsViewController];
+    [settingsViewController didMoveToParentViewController:self];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    [contentView addSubview:[self currentViewController].view];
-    currentControllerIndex=0;
-    [self _runSubviewsAnim:YES controller:[self currentViewController] duration:.5f];
+//    [contentView addSubview:[self currentViewController].view];
+//    currentControllerIndex=0;
+//    [self _runSubviewsAnim:YES controller:[self currentViewController] duration:.5f];
 }
 
 
@@ -115,12 +98,12 @@
             if (finished) {
                 currentController.view.frame= CGRectMake(0, 0, width, height);
                 [currentController.view removeFromSuperview];
-                currentControllerIndex=index;
+                self.currentControllerIndex=index;
             }
         }];
         
         //移入视图的动画
-        [self _runSubviewsAnim:index>currentControllerIndex controller:controller duration:duration];
+        [self _runSubviewsAnim:index>self.currentControllerIndex controller:controller duration:duration];
         
     }
 }
@@ -133,8 +116,8 @@
     if (!forward) {
         offset=-offset;
     }
-    //    for (UIView *v in _controller.view.subviews) {
-    for (UIView *v in ((UINavigationController *)_controller).topViewController.view.subviews) {
+        for (UIView *v in _controller.view.subviews) {
+//    for (UIView *v in ((UINavigationController *)_controller).topViewController.view.subviews) {
         v.center=CGPointMake(v.center.x+offset, v.center.y);
         
         [UIView animateWithDuration:_duration delay:delay
